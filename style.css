@@ -1,0 +1,24 @@
+
+main{ /*容器*/
+    display: flex;flex-wrap: wrap;
+    /*水平對齊*/
+    justify-content: center;
+    /*垂直對齊*/
+    align-items:stretch;
+    background-color:pink;
+}
+main>.item{ /*內容*/
+    flex:none;
+    width:270px;margin:10px;
+    background-color: azure;
+}
+@media (max-width:1200px){
+    main>.item{
+        width: 45%;
+    }
+}
+@media (max-width:500px){
+    main>.item{
+        width:90%
+    }
+}

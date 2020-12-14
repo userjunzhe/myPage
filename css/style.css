@@ -1,0 +1,10 @@
+
+main{ 
+    display: flex;
+    background-color:pink;
+}
+main>.item{ 
+    flex:none;
+    width:300px;margin:10px;
+    background-color: azure;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    </meta>
+    <meta name="viewport" content="width=divice-width, initial-scale=1, maximum-sale=1"/>
+    <title>Test</title>
+    <style type="text/css">
+        /*選擇器1*/
+        .title {
+            background-color: gray;
+            color: white;
+            font-weight: bold;-
+            font-size: 30px;
+            text-align: center;
+            padding: 7px;
+        }
+
+        .content {
+            width: 250px;
+            padding: 10px;
+            border: 1px solid;
+            font-weight: bold;
+            margin-top: 20px
+        }
+
+        .box {
+            position: relative;
+            left: 200px;
+            top: 0px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(99, 40, 40);
+        }
+
+        /*選擇器2*/
+        .title2 {
+            font-weight: bold;
+        }
+
+        .content2 {
+            width: 1000px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .box2 {
+            width: 280px;
+            padding: 10px;
+            margin: 10px;
+            background-color: white;
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+            line-height: 30px;
+            height: 180px;
+        }
+
+        /*表格*/
+        table {
+            border: 1px solid #f50505;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid #f50505;
+            padding: 10px;
+        }
+
+        /*表格第三欄*/
+        tr:nth-child(3) {
+            background-color: #999999;
+        }
+
+        /*對手機使用者之CSS調整*/
+        @media screen and (max-width: 600px) {
+            .title {
+                font-size: 24px;
+            }
+
+            .title2 {
+                font-size: 24px;
+            }
+
+            .content2 {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+    <!--嵌入CSS-->
+    <link href="style.css" rel="stylesheet"  type="text/css"/>
+    <script type="text/javascript">
+    alert("alert")
+    </script>
+</head>
+<body style="background-color: #eeeeee;">
+    <div class="title">
+        MY PAGE
+    </div>
+    <h3 class="content">My picture</h3>
+    <img src="my picture 1.jpg" width="200" />
+    <div class="content">INTR<span style="color: rgb(99, 40, 40); position:relative;top: -5px;">o</span></div>
+    <h3>my intro my intro my intro my intro my intro my intro my intro my intro </h3>
+    <div class="box" style="margin-top: 20px;"></div>
+    <hr />
+    <ul>
+        <h1>TEST 1</h1>
+        <li><a href="http://www.youtube.com/"> test 1-1<a></a></li>
+        <li>test 1-2</li>
+        <li>test 1-3</li>
+    </ul>
+    <hr />
+    <h1>TEST 2</h1>
+    <table width="290">
+        <tr style="background-color: burlywood;">
+            <td rowspan="2">test 2</td>
+            <td><b>test 3-1</b> </td>
+        </tr>
+        <tr style="background-color:rgb(207, 234, 245);">
+            <td>test 3-2</td>
+        </tr>
+        <tr>
+            <td colspan="2">test 4</td>
+
+        </tr>
+
+    </table>
+    <hr />
+    <div class="title">Title 2</div>
+    <div class="content2">
+        <div class="box2">
+            <div class="title2">Lorem ipsum dolor sit amet consectetur.</div>
+            <div>Lorem ipsum dolor sit amet.</div>
+            <div>Lorem ipsum dolor sit.</div>
+        </div>
+        <div class="box2">
+            <div class="title2">Lorem ipsum dolor sit amet consectetur.</div>
+            <div>Lorem ipsum dolor sit amet.</div>
+            <div>Lorem ipsum dolor sit.</div>
+        </div>
+        <div class="box2">
+            <div class="title2">Lorem ipsum dolor sit amet consectetur.</div>
+            <div>Lorem ipsum dolor sit amet.</div>
+            <div>Lorem ipsum dolor sit.</div>
+        </div>
+
+    </div>
+    <hr/>
+    <!--flex 解決方法： 並排 、 水平對齊 、 垂直對齊-->
+    <!--回應式設計關鍵動作：依螢幕寬窄的欄位變化
+    例如：4欄 => 2欄 => 1欄
+    規劃：1200xp以上 => 4欄，固定尺寸
+        500xp 至 1200xp => 2欄，彈性
+        500xp以下 => 1欄，彈性尺寸
+    -->
+    <main>
+        <div class="item">  News<br> 122</br></div>
+        <div class="item" style="text-align: center;">news</div>
+        <div class="item">news</div>
+        <div class="item">news</div>
+    </main>
+</body>
+
+</html>
